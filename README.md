@@ -1,1 +1,1 @@
-# repair-of-apartments
+# webpack-boilerplate
