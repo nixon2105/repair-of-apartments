@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const webpack = require('webpack');
@@ -26,30 +26,31 @@ function setDMode() {
 }
 
 const config = {
-  target: "web", 
+  target: 'web',
   entry: './src/js/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: '[name].js',
   },
   mode: setDMode(),
   devtool: setDevTool(),
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.html$/,
-        use: [{
-          loader: 'html-loader',
-          options: {
-            minimize: false
-          }
-        }]
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: false,
+            },
+          },
+        ],
       },
       {
         test: /\.js$/,
-        use: ['babel-loader'/* , 'eslint-loader' */],
-        exclude: [
-          /node_modules/
-        ]
+        use: ['babel-loader' /* , 'eslint-loader' */],
+        exclude: [/node_modules/],
       },
       {
         test: /\.css$/,
@@ -59,13 +60,17 @@ const config = {
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true
-            }
-          }, {
+              sourceMap: true,
+            },
+          },
+          {
             loader: 'postcss-loader',
-            options: { sourceMap: true, config: { path: './postcss.config.js' } }
-          }
-        ]
+            options: {
+              sourceMap: true,
+              config: { path: './postcss.config.js' },
+            },
+          },
+        ],
       },
       {
         test: /\.scss$/,
@@ -75,18 +80,23 @@ const config = {
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true
-            }
-          }, {
+              sourceMap: true,
+            },
+          },
+          {
             loader: 'postcss-loader',
-            options: { sourceMap: true, config: { path: './postcss.config.js' } }
-          }, {
+            options: {
+              sourceMap: true,
+              config: { path: './postcss.config.js' },
+            },
+          },
+          {
             loader: 'sass-loader',
             options: {
-              sourceMap: true
-            }
-          }
-        ]
+              sourceMap: true,
+            },
+          },
+        ],
       },
       {
         test: /\.(jpg|png|svg|gif)$/,
@@ -95,29 +105,32 @@ const config = {
             loader: 'file-loader',
             options: {
               outputPath: 'img',
-              name: '[name].[ext]'
-            }},
+              name: '[name].[ext]',
+            },
+          },
           {
             loader: 'image-webpack-loader',
             options: {
               mozjpeg: {
                 processive: true,
-                quality: 98
-              }
-            }
-          }
-        ]
+                quality: 98,
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.(woff|woff2|ttf|otf|eot)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            outputPath: 'fonts'
-          }
-        }]
-      }
-    ]
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'fonts',
+            },
+          },
+        ],
+      },
+    ],
   },
 
   plugins: [
@@ -126,12 +139,12 @@ const config = {
     }),
     new HtmlWebPackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
     }),
-      new webpack.DefinePlugin({
+    new webpack.DefinePlugin({
       API_KEY: JSON.stringify(process.env.API_KEY),
-      APP_ENV: JSON.stringify(process.env.APP_ENV)
-    })
+      APP_ENV: JSON.stringify(process.env.APP_ENV),
+    }),
   ],
 
   devServer: {
@@ -139,14 +152,12 @@ const config = {
     compress: true,
     port: 3000,
     stats: 'errors-only',
-    clientLogLevel: 'none'
-  }
-}
+    clientLogLevel: 'none',
+  },
+};
 
 if (isProd) {
-  config.plugins.push(
-    new UglifyJSPlugin(),
-  );
-};
+  config.plugins.push(new UglifyJSPlugin());
+}
 
 module.exports = config;
