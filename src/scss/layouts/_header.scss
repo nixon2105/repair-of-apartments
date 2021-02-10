@@ -11,6 +11,8 @@
     display: flex;
     align-items: center;
     margin-left: 25px;
+    font-family: 'SeroPro';
+    font-weight: 900;
   }
 }
 
@@ -28,7 +30,8 @@
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  font-family: 'Segoe';
+  font-family: 'SeroPro';
+  font-weight: 400;
   color: $color-prim;
 
   &__item:first-child {
@@ -70,6 +73,8 @@
   color: $color-prim;
   border: 2px solid $clor-additional;
   border-radius: 6px;
+  font-family: $font-prim;
+  font-weight: 600;
 
   &:hover {
     background: $clor-additional;
