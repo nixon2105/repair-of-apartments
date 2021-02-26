@@ -26,37 +26,47 @@
 .title__gradient {
   background-clip: text;
   color: transparent;
-  background-clip: text;
   background-image: linear-gradient(180deg, #ffe600 -33.93%, #ffb800 459.56%);
 }
 
 .intro__links {
-  width: 245px;
-  margin-top: 20px;
+  width: 303px;
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.social__link {
+  display: flex;
+
+  a {
+    padding-top: 20px;
+  }
+}
+
 .intro__btn {
   background: transparent;
-  width: 150px;
+  width: 167px;
   height: 47px;
   color: $color-prim;
   border: 2px solid $clor-additional;
+  // border: 2px solid transparent;
+  // background: linear-gradient(180deg, #ffe600 -33.93%, #ffb800 459.56%);
   border-radius: 6px;
   font-family: $font-prim;
   font-weight: 600;
 
   &:hover {
-    background: $clor-additional;
+    color: #392915;
+    background: linear-gradient(180deg, #ffe600 -33.93%, #ffb800 459.56%);
     transition: all 500ms ease;
   }
 }
 
 .intro__stat {
-  width: 870px;
-  margin-top: 76px;
+  width: 926px;
+  margin-top: 81px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,17 +76,39 @@
 .stat__item {
   display: flex;
   align-items: center;
-  border-left: 1px solid $color-prim;
-  padding-left: 20px;
+  margin-right: 73px;
 }
 
-.stat__item:first-child {
-  border: none;
-  padding-left: 0px;
+.stat__item:last-child {
+  margin-right: 0;
+}
+
+.stat__experience::after {
+  content: '';
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: -7px;
+  left: 215px;
+  height: 67px;
+  width: 1px;
+  transform: rotate(30deg);
+}
+
+.stat__square::after {
+  content: '';
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: -7px;
+  left: 609px;
+  height: 67px;
+  width: 1px;
+  transform: rotate(30deg);
 }
 
 .stat__count {
-  color: $clor-additional;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(180deg, #ffe600 -33.93%, #ffb800 459.56%);
   font-family: $font-prim;
   font-weight: 900;
   font-size: 42px;
