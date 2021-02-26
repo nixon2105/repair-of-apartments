@@ -7,17 +7,22 @@
   right: 0;
   z-index: 1000;
 
+  &__logo {
+    padding-top: 24px;
+  }
+
   &__phone {
     display: flex;
     align-items: center;
-    margin-left: 25px;
+    margin-left: 46px;
     font-family: 'SeroPro';
     font-weight: 900;
   }
 }
 
 .header__navigation {
-  margin-left: 100px;
+  margin-left: 122px;
+  position: relative;
 }
 
 .header__wrapper {
@@ -33,18 +38,14 @@
   font-family: 'SeroPro';
   font-weight: 400;
   color: $color-prim;
+  padding-left: 0;
 
   &__item:first-child {
     margin-left: 0px;
   }
 
-  &__item:last-child {
-    border-right: 2px solid $color-prim;
-    padding-right: 25px;
-  }
-
   &__item {
-    margin-left: 35px;
+    margin-left: 40px;
     font-size: 16px;
   }
   &__item:hover {
@@ -54,30 +55,40 @@
   }
 }
 
+.navigation::after {
+  content: '';
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 7px;
+  left: 415px;
+  height: 31px;
+  width: 1.5px;
+}
 .phone__icon--tel {
-  padding-right: 4px;
+  padding-right: 8px;
 }
 
 .phone__number a {
   text-decoration: none;
   color: $color-prim;
-  padding-left: 3px;
+  padding-left: 17px;
   padding-right: 10px;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .phone__btn {
+  padding: 15px 11px;
   background: transparent;
   width: 217px;
   height: 47px;
-  color: $color-prim;
-  border: 2px solid $clor-additional;
-  border-radius: 6px;
+  color: #392915;
+  text-decoration: none;
+  background: linear-gradient(88.06deg, #ffe501 -5.19%, #ffd669 101.43%);
+  box-shadow: 0px 22px 67px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  filter: drop-shadow(0px 22px 67px rgba(0, 0, 0, 0.25));
+  border-radius: 8px;
   font-family: $font-prim;
   font-weight: 600;
-
-  &:hover {
-    background: $clor-additional;
-    transition: all 500ms ease;
-  }
 }
