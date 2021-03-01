@@ -1,7 +1,7 @@
 .section {
   background-image: url('../assets/images/background/bg-servises.png');
   height: 100vh;
-  max-height: 853px;
+  min-height: 853px;
   width: 100%;
   background-size: cover;
 }
@@ -13,6 +13,12 @@
   justify-content: space-between;
   padding-top: 40px;
   padding-left: 20px;
+}
+
+.services__item {
+  width: 370px;
+  height: 370px;
+  background-image: url('../assets/images/services/apartment.png');
 }
 
 .services__text {
