@@ -1,7 +1,5 @@
 .indroduce {
   background-image: url('../assets/images/background/main-bg.png');
-  height: 100vh;
-  min-height: 665px;
   width: 100%;
   background-size: cover;
   position: relative;
@@ -51,8 +49,6 @@
   height: 47px;
   color: $color-prim;
   border: 2px solid $clor-additional;
-  // border: 2px solid transparent;
-  // background: linear-gradient(180deg, #ffe600 -33.93%, #ffb800 459.56%);
   border-radius: 6px;
   font-family: $font-prim;
   font-weight: 600;
@@ -67,6 +63,7 @@
 .intro__stat {
   width: 926px;
   margin-top: 81px;
+  margin-bottom: 36px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,4 +117,57 @@
   font-family: $font-prim;
   font-weight: 400;
   font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .intro__title {
+    width: 600px;
+    font-size: 38px;
+  }
+
+  .stat__item {
+    flex-direction: column;
+  }
+
+  .stat__count {
+    font-size: 38px;
+  }
+
+  .intro__stat {
+    width: 700px;
+    align-items: start;
+  }
+
+  .stat__experience::after {
+    left: 174px;
+  }
+
+  .stat__text {
+    text-align: center;
+  }
+
+  .stat__square::after {
+    left: 478px;
+  }
+}
+
+@media (max-width: 414px) {
+  .intro__title {
+    width: 370px;
+    font-size: 24px;
+  }
+  .intro__links {
+    width: 280px;
+  }
+
+  .intro__stat {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .intro__title {
+    width: 276px;
+    font-size: 24px;
+  }
 }

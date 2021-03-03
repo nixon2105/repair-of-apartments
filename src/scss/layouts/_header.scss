@@ -11,6 +11,11 @@
     padding-top: 20px;
   }
 
+  &__navigation {
+    margin-left: 122px;
+    position: relative;
+  }
+
   &__phone {
     display: flex;
     align-items: center;
@@ -18,11 +23,6 @@
     font-family: 'SeroPro';
     font-weight: 900;
   }
-}
-
-.header__navigation {
-  margin-left: 122px;
-  position: relative;
 }
 
 .nav-toggle {
@@ -35,8 +35,7 @@
   cursor: pointer;
   background: none;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 31px;
   z-index: 1;
 }
 
@@ -67,11 +66,11 @@
 }
 
 .nav-toggle__item:before {
-  top: -8px;
+  top: -10px;
 }
 
 .nav-toggle__item:after {
-  bottom: -8px;
+  bottom: -10px;
 }
 
 .header__wrapper {
@@ -117,6 +116,10 @@
   padding-right: 8px;
 }
 
+.phone__consultation--mob {
+  display: none;
+}
+
 .phone__number a {
   text-decoration: none;
   color: $color-prim;
@@ -140,4 +143,53 @@
   border-radius: 8px;
   font-family: $font-prim;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .header__logo {
+    padding-left: 50px;
+  }
+  .header__navigation {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .phone__number,
+  .phone__icon--tel,
+  .phone__icon--viber {
+    display: none;
+  }
+  .phone__consultation {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 414px) {
+  .phone__consultation {
+    display: none;
+  }
+
+  .phone__consultation--mob {
+    display: block;
+    margin: 55px auto;
+  }
+
+  .header__logo {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .phone__consultation {
+    display: none;
+  }
+
+  .header__logo {
+    margin: 0 auto;
+  }
 }
