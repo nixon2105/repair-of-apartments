@@ -1,0 +1,53 @@
+.section__portfolio {
+  background-color: #fdfdfd;
+}
+
+.portfolio__title {
+  font-size: 48px;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'PlayfairDisplay';
+  line-height: 64px;
+}
+
+.portfolio__title:after {
+  content: '';
+  display: block;
+  width: 523px;
+  height: 5px;
+  margin: 21px auto;
+  background-color: #ffe600;
+}
+
+.portfolio__subtitle {
+  font-size: 16px;
+  text-align: center;
+  color: #8c8a9c;
+  font-family: $font-prim;
+  font-weight: 600;
+  margin-top: -12px;
+}
+
+.gallery {
+  display: flex;
+}
+
+.gallery__img {
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px 20px;
+}
+.span-col-2 {
+  grid-column: span 2 / auto;
+}
+
+.span-row-5 {
+  grid-row: span 5 / auto;
+}
+
+.span-row-3 {
+  grid-row: span 3 / auto;
+}
