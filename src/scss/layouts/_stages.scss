@@ -10,3 +10,67 @@
   font-family: 'PlayfairDisplay';
   line-height: 64px;
 }
+
+.stages {
+  background-image: url('../assets/images/icons/arrows-line.png');
+  z-index: 10;
+  background-position: 100% 28%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.stage__item {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  align-items: center;
+  // width: 33.33%;
+  flex: 1 1 auto;
+  margin: 59px 13px;
+}
+
+.stage__content {
+  font-family: $font-prim;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.stage__subtitle {
+  font-family: 'PlayfairDisplay';
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+.stage__item--first {
+  width: 358px;
+}
+
+.stage__item--second {
+  width: 299px;
+}
+
+.stage__item--third {
+  width: 321px;
+}
+
+.stage__item--sixth {
+  width: 325px;
+  margin-top: 30px;
+}
+
+.stage__item--fifth {
+  width: 294px;
+}
+
+.stage__item--fourth {
+  width: 294px;
+}
