@@ -30,24 +30,76 @@
 
 .gallery {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.gallery__column-2,
+.gallery__column-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__column-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__row-2 {
+  margin-top: 16px;
+}
+.gallery__row-4 {
+  margin-top: 13px;
+}
+
+.gallery__row-4 {
+  .block__inst {
+    margin-left: 12px;
+  }
+}
 .gallery__img {
+  // display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 12px 20px;
-}
-.span-col-2 {
-  grid-column: span 2 / auto;
+.gallery__img:hover {
+  cursor: url('../assets/images/icons/lupa.svg'), auto;
 }
 
-.span-row-5 {
-  grid-row: span 5 / auto;
+.block__inst {
+  position: relative;
+  display: inline-block;
 }
 
-.span-row-3 {
-  grid-row: span 3 / auto;
+.inst__link {
+  position: absolute;
+  top: 9%;
+  left: 76%;
+}
+
+.inst__link--content {
+  width: 170px;
+  position: absolute;
+  top: 452%;
+  right: -133%;
+}
+
+.content__text {
+  font-size: 24px;
+  font-weight: 700;
+  color: $color-prim;
+  margin: 0;
+}
+
+.content__link {
+  text-decoration: none;
+  color: #562720;
+  font-size: 13px;
+}
+
+.block__inst {
+  .gallery__img:hover {
+    cursor: default;
+  }
 }
