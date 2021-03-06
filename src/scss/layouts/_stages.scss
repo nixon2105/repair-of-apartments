@@ -1,6 +1,15 @@
 .section__stages {
   background-color: #fdfdfd;
   margin-top: 100px;
+  position: relative;
+}
+
+.section__stages--title {
+  position: absolute;
+  font-family: 'PlayfairDisplay';
+  font-size: 144px;
+  color: #a59e9e0f;
+  top: -70px;
 }
 
 .stages__title {
@@ -12,6 +21,7 @@
 }
 
 .stages {
+  position: relative;
   background-image: url('../assets/images/icons/arrows-line.png');
   z-index: 10;
   background-position: 100% 28%;
@@ -68,9 +78,11 @@
 }
 
 .stage__item--fifth {
+  margin-top: 32px;
   width: 294px;
 }
 
 .stage__item--fourth {
+  margin-top: 32px;
   width: 294px;
 }
