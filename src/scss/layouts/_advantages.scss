@@ -1,0 +1,67 @@
+.section__advantages {
+  background-image: url('../assets/images/background/adven-cup.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  z-index: 12;
+}
+
+.advantages {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 175px 0 30px 0;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.advantages__item::after {
+  content: '';
+  background: rgba(182, 176, 176, 0.4);
+  position: absolute;
+  top: 184px;
+  left: 300px;
+  height: 67px;
+  width: 1px;
+  transform: rotate(30deg);
+}
+
+.advantages__item--like::after {
+  content: '';
+  background: rgba(126, 123, 123, 0.4);
+  position: absolute;
+  top: 184px;
+  left: 600px;
+  height: 67px;
+  width: 1px;
+  transform: rotate(30deg);
+}
+
+.advantages__item--money::after {
+  content: '';
+  background: rgba(182, 176, 176, 0.4);
+  position: absolute;
+  top: 184px;
+  left: 900px;
+  height: 67px;
+  width: 1px;
+  transform: rotate(30deg);
+}
+
+.advantages__text {
+  padding-top: 30px;
+  font-family: $font-prim;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  width: 270px;
+}
