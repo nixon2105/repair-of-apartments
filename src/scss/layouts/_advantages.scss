@@ -65,3 +65,26 @@
   text-align: center;
   width: 270px;
 }
+
+@media (max-width: 768px) {
+  .advantages__item::after {
+    display: none;
+  }
+
+  .advantages__item--like::after {
+    display: none;
+  }
+
+  .advantages__item--money::after {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 414px) {
+}
+
+@media (max-width: 320px) {
+}

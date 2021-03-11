@@ -85,3 +85,18 @@
   margin-top: 32px;
   width: 294px;
 }
+
+@media (max-width: 768px) {
+  .section__stages--title {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 414px) {
+}
+
+@media (max-width: 320px) {
+}

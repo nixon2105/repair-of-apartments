@@ -64,3 +64,23 @@
   left: 25%;
   color: $color-prim;
 }
+
+@media (max-width: 768px) {
+  .services__title,
+  .services__subtitle {
+    display: none;
+  }
+
+  .stages {
+    background-image: none;
+  }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 414px) {
+}
+
+@media (max-width: 320px) {
+}
