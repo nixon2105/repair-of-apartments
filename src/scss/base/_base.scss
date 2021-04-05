@@ -5,10 +5,9 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: $base-font-size;
 }
 
 body {
   font-family: $font-prim;
-  @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
 }
