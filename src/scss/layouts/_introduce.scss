@@ -9,9 +9,11 @@
   padding-top: 124px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 17px;
 }
 
 .intro__title {
+  padding-left: 15px;
   width: 826px;
   font-family: 'PlayfairDisplay';
   font-weight: 900;
@@ -19,6 +21,7 @@
   font-size: 52px;
   line-height: 1.4;
   box-shadow: 0px 21px 52px rgba(0, 0, 0, 0.18);
+  word-spacing: 10px;
 }
 
 .title__gradient {
@@ -28,8 +31,8 @@
 }
 
 .intro__links {
+  padding-left: 15px;
   width: 303px;
-  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,6 +43,7 @@
 
   a {
     padding-top: 20px;
+    padding-left: 7px;
   }
 }
 
@@ -61,8 +65,9 @@
 }
 
 .intro__stat {
+  padding-left: 15px;
   width: 926px;
-  margin-top: 81px;
+  margin-top: 71px;
   margin-bottom: 36px;
   display: flex;
   justify-content: space-between;
@@ -84,22 +89,22 @@
   content: '';
   background: rgba(255, 255, 255, 0.4);
   position: absolute;
-  top: -7px;
-  left: 215px;
+  top: -8px;
+  left: 230px;
   height: 67px;
   width: 1px;
-  transform: rotate(30deg);
+  transform: rotate(28deg);
 }
 
 .stat__square::after {
   content: '';
   background: rgba(255, 255, 255, 0.4);
   position: absolute;
-  top: -7px;
-  left: 609px;
+  top: -8px;
+  left: 622px;
   height: 67px;
   width: 1px;
-  transform: rotate(30deg);
+  transform: rotate(28deg);
 }
 
 .stat__count {
