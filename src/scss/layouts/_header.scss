@@ -138,9 +138,9 @@
 }
 
 .phone__btn {
+  display: inline-block;
   background: transparent;
-  width: 217px;
-  height: 47px;
+  padding: 15px 11px;
   color: #392915;
   text-decoration: none;
   background: linear-gradient(88.06deg, #ffe501 -5.19%, #ffd669 101.43%);
@@ -150,6 +150,8 @@
   border-radius: 8px;
   font-family: 'SeroPro';
   font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
   border: none;
 }
 
