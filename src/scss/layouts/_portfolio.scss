@@ -34,37 +34,85 @@
   justify-content: space-between;
 }
 
-.gallery__column-2,
-.gallery__column-3 {
+// .gallery__column-2,
+// .gallery__column-3 {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .gallery__column-3 {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .gallery__row-2 {
+//   margin-top: 16px;
+// }
+// .gallery__row-4 {
+//   margin-top: 13px;
+// }
+
+// .gallery__row-4 {
+//   .block__inst {
+//     margin-left: 12px;
+//   }
+// }
+// .gallery__img {
+//   // display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// .gallery__img:hover {
+//   cursor: url('../assets/images/icons/lupa.svg'), auto;
+// }
+
+.gallery {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
-.gallery__column-3 {
-  display: flex;
-  flex-direction: column;
+.filter-menu {
+  padding-left: 0;
 }
 
-.gallery__row-2 {
-  margin-top: 16px;
+.filter-menu li {
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 25px;
+  background: linear-gradient(180deg, #ff9e00 -33.93%, #ffe100 459.56%);
+  border-radius: 5px;
+  color: $color-prim;
+  cursor: pointer;
+  font-family: $font-prim;
 }
-.gallery__row-4 {
-  margin-top: 13px;
-}
-
-.gallery__row-4 {
-  .block__inst {
-    margin-left: 12px;
-  }
-}
-.gallery__img {
-  // display: block;
-  max-width: 100%;
-  height: auto;
+.filter-menu li:hover,
+.filter-menu li.current {
+  background: #ffe215;
 }
 
-.gallery__img:hover {
-  cursor: url('../assets/images/icons/lupa.svg'), auto;
+.filter-item li {
+  width: 50%;
+  padding: 3px;
+  float: left;
+}
+
+.filter-item li.active {
+  width: 50%;
+  padding: 2px;
+  transition: all 0.5s ease;
+}
+
+.filter-item li.delete {
+  width: 0%;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+
+.filter-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .block__inst {
