@@ -1,4 +1,4 @@
-.section__portfolio {
+section__portfolio {
   background-color: #fdfdfd;
 }
 
@@ -69,9 +69,13 @@
   // float: left;
 }
 
+.item__photo.active {
+  border: none;
+}
+
 .filter-item li.active {
   // width: 50%;
-  padding: 2px;
+  // padding: 2px;
   transition: all 0.5s ease;
 }
 

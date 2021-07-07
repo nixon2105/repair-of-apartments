@@ -6,7 +6,7 @@ let i;
 
 for (i = 0; i < coll.length; i += 1) {
   coll[i].addEventListener('click', function () {
-    this.classList.toggle('active');
+    this.classList.toggle('act');
     const content = this.nextElementSibling;
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
