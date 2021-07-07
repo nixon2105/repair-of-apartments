@@ -96,7 +96,29 @@
 }
 
 @media (max-width: 414px) {
+  .stages__title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .stage__item {
+    margin: 15px 13px;
+  }
+  .stage__subtitle {
+    font-size: 20px;
+  }
+
+  .stage__content {
+    font-size: 14px;
+    width: 300px;
+  }
+  .content__descr {
+    width: 300px;
+    text-align: center;
+  }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
+  .collapsible {
+    font-size: 14px;
+  }
 }

@@ -97,5 +97,12 @@
 @media (max-width: 414px) {
 }
 
+@media (max-width: 375px) {
+  .services__title--mobile {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+
 @media (max-width: 320px) {
 }

@@ -92,39 +92,23 @@ section__portfolio {
   height: 100%;
 }
 
-.block__inst {
-  position: relative;
-  display: inline-block;
-}
+@media (max-width: 375px) {
+  .portfolio__title {
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+  }
 
-.inst__link {
-  position: absolute;
-  top: 9%;
-  left: 76%;
-}
+  .portfolio__subtitle {
+    font-size: 14px;
+  }
 
-.inst__link--content {
-  width: 170px;
-  position: absolute;
-  top: 452%;
-  right: -133%;
-}
+  .portfolio__title:after {
+    width: 280px;
+  }
 
-.content__text {
-  font-size: 24px;
-  font-weight: 700;
-  color: $color-prim;
-  margin: 0;
-}
-
-.content__link {
-  text-decoration: none;
-  color: #562720;
-  font-size: 13px;
-}
-
-.block__inst {
-  .gallery__img:hover {
-    cursor: default;
+  .filter-menu li {
+    font-size: 14px;
+    padding: 8px 15px;
   }
 }

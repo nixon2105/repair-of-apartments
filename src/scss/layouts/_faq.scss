@@ -53,10 +53,11 @@
   transform: translateY(-50%) rotate(135deg);
 }
 
-.active:after {
+.act:after {
   margin-top: 5px;
 
   transform: translateY(-50%) rotate(-45deg);
+  transition: 0.1s ease-out;
 }
 
 .content {
@@ -92,6 +93,10 @@
 }
 
 @media (max-width: 414px) {
+  .faq__title {
+    font-size: 30px;
+    line-height: 32px;
+  }
   .faq__item {
     width: 350px;
   }
