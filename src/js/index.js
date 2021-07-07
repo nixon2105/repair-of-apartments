@@ -44,20 +44,20 @@ for (i = 0; i < coll.length; i += 1) {
   to.parentNode.insertBefore(s, to);
 })();
 
-let sortBtn = document.querySelector('.filter-menu').children;
-let sortItem = document.querySelector('.filter-item').children;
+const sortBtn = document.querySelector('.filter-menu').children;
+const sortItem = document.querySelector('.filter-item').children;
 
-for (let i = 0; i < sortBtn.length; i++) {
+for (let i = 0; i < sortBtn.length; i += 1) {
   sortBtn[i].addEventListener('click', function () {
-    for (let j = 0; j < sortBtn.length; j++) {
+    for (let j = 0; j < sortBtn.length; j += 1) {
       sortBtn[j].classList.remove('current');
     }
 
     this.classList.add('current');
 
-    let targetData = this.getAttribute('data-target');
+    const targetData = this.getAttribute('data-target');
 
-    for (let k = 0; k < sortItem.length; k++) {
+    for (let k = 0; k < sortItem.length; k += 1) {
       sortItem[k].classList.remove('active');
       sortItem[k].classList.add('delete');
 
