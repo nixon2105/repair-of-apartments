@@ -183,6 +183,9 @@
 }
 
 @media (max-width: 414px) {
+  .header {
+    padding: 0;
+  }
   .phone__consultation {
     display: none;
   }
