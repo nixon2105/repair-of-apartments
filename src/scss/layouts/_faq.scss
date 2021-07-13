@@ -20,7 +20,6 @@
   position: relative;
 
   width: 100%;
-  padding: 16px;
 
   font-size: 16px;
   font-family: $font-prim;
@@ -90,6 +89,11 @@
   .faq__item {
     width: 500px;
   }
+  .collapsible__text {
+    width: 300px;
+    text-align: center;
+    margin: 10px auto;
+  }
 }
 
 @media (max-width: 414px) {
@@ -99,6 +103,16 @@
   }
   .faq__item {
     width: 350px;
+  }
+  .collapsible__text {
+    width: 200px;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .collapsible:after {
+    top: 45%;
+    width: 12px;
+    height: 12px;
   }
 }
 
